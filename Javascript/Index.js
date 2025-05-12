@@ -4,10 +4,16 @@ let myName = "Maria"; // String
 const isStudent =true; // boolean (true or false)
 
 
-console.log("Hej" + myName +", jag är " + age);
+console.log("Hej" + myName + ", jag är " + age);
 console.log("Är student: " + isStudent);
 console.log(myName, "Hej");
-let greeting = "hej, jag heter " +myName + ", jag är" + age +"år";
+let greeting = "hej, jag heter " + myName + ", jag är" + age + "år";
 if (myName == "Ada") {
     console.log('Du heter Ada!');
+}
+console.log(greeting);
+else {
+    if(myName == "Ada"){
+        console.log("Du heter inte Ada");
+    }
 }

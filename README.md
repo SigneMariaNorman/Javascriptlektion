@@ -1,2 +1,0 @@
-# Javascriptlektion
-Övning

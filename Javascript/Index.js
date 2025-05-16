@@ -15,4 +15,14 @@ function subtract(numberOne, numberTwo) {
 }
 
 const inputMunber = prompt('Välj första nummer');
+console.log('Första nummer: ', inputNumberOne);
+const inputOperator = prompt("Välj addering (+) eller subtrahering (-)");
+console.log("Operator:", inputOperator);
+const inputNumberTwo = prompt("Välj andra nummer");
+console.log('A nummer: ', inputNumberTwo);
 
+if (inputOperator == '+') {
+    add(inputNumberOne, inputNumberTwo);
+} else if (inputOperator == '-'){
+    subtract(inputNumberOne, inputNumberTwo);
+}

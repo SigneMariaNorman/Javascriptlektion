@@ -14,12 +14,5 @@ function subtract(numberOne, numberTwo) {
     console.log("Summan blir: " + sum);
 }
 
-let operator = 'subtract';
-
-if (operator == 'subtract' ) {
-    subtract(40, 70);
-} else if(operator == 'add') {
-    add(40, 70);
-}
-
+const inputMunber = prompt('Välj första nummer');
 

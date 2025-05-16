@@ -1,25 +1,25 @@
-//Detta är en kommentar och kommer inte tolkas av läsaren som kod. 
-let age = 41; //Number
-let myName = "Maria"; // String
-const isStudent =true; // boolean (true or false)
+function add(numberOne, numberTwo) {
+    console.log('Add');
+    console.log('NumberOne är', numberOne);
+    console.log('numberTwo är', numberTwo);
+    let sum = numberOne + numberTwo;
+   
+    console.log("summan blir: " + sum);
+}
+
+function subtract(numberOne, numberTwo) {
+    console.log('Subtract')
+    let sum = numberOne - numberTwo;
+
+    console.log("Summan blir: " + sum);
+}
+
+let operator = 'subtract';
+
+if (operator == 'subtract' ) {
+    subtract(40, 70);
+} else if(operator == 'add') {
+    add(40, 70);
+}
 
 
-console.log("Hej" + myName + ", jag är " + age);
-console.log("Är student: " + isStudent);
-console.log(myName, "Hej");
-let greeting = "hej, jag heter " + myName + ", jag är " + age + "år";
-
-    if(myName == "Ada") {
-        console.log("Du heter Ada");
-    } else {
-        console.log("Du heter inte Ada")
-    }
-if (age > 36) { // >större än, <
-    console.log('Ung i hjärtat');
-}
-console.log(greeting);
-else if () {
-     // ==jämförelse, // = eller, 
-}
-    else {
-}

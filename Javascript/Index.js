@@ -7,24 +7,18 @@
  * Show winner
  */
 
-
-
 const userChoice = prompt('Välj vapen: sten, sax eller påse'); //Möjliga värden: "sten", "sax" eller "påse"
 console.log(userChoice);
-
-
-
-
 let computerChoice;
 function selectComputerWeapon() {
     const randomNumber = Math.floor(Math.random() * 3); //Slumpa ett tal mellan 0-3. Möjliga värden 0, 1, 2
 console.log(randomNumber);
 if (randomNumber == 0) {
-    computerChoice = "sten";
+    return "sten";
 } else if (randomNumber == 1) {
-    computerChoice = "sax";
+    return "sax";
 } else if (randomNumber == 2) {
-    computerChoice = "påse";
+    return "påse";
 }
 }
 console.log("Användarens val: ", userChoice);
@@ -59,9 +53,10 @@ if (computerChoice == "påse") {
     console.log("Datorn vann!");
    }
 }
-function selectComputerWeapon() {
+let somputerChoice = selectComputerWeapon() 
 
-}
+console.log("Användarens val: ", userChoice);
+console.log("Datorns val: ", computerChoice);
 
-function determineWinner() {}
-determineWinner();
+determinewinner();
+
